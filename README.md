@@ -1,31 +1,109 @@
-# Pulse (Dory Clone)
+# StackIt – A Minimal Q&A Forum Platform
 
-A full-stack Q&A and Polls platform inspired by Dory. Built with Next.js, Supabase, Prisma and Shadcn.
+## Overview
 
-You can follow along the entire development of this project here 👇
-[![Preview](https://github.com/user-attachments/assets/ac66d4c0-3167-45ff-8f9f-332a1070b732)](https://youtu.be/k8N9slcdHR8)
+**StackIt** is a minimal question-and-answer platform that supports collaborative learning and structured knowledge sharing. It is designed to be simple, user-friendly, and focused on the core experience of asking and answering questions within a community.
 
-## Installation
+---
 
-```bash
-yarn install
-```
+## 🚀 Problem Statement
 
-## Getting Started
+Build a minimal, intuitive Q&A platform where users can ask, answer, and collaborate effectively. The system should support roles with different permissions, and include rich features like rich text editing, notifications, and tagging for content organization.
 
-First, run the development server:
+---
 
-```bash
-yarn dev
-```
+## 👥 User Roles and Permissions
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+| Role   | Permissions |
+|--------|-------------|
+| Guest  | View all questions and answers |
+| User   | Register, log in, post questions/answers, vote |
+| Admin  | Moderate content, manage users, review activity logs |
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 🌟 Core Features (Must-Have)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 1. Ask Question
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Users can submit new questions using:
+- **Title**: A short and descriptive headline.
+- **Description**: Written using a rich text editor.
+- **Tags**: Multi-select input (e.g., React, JWT, etc.)
+
+---
+
+### 2. Rich Text Editor Features
+
+The description editor supports:
+- **Text Styles**: Bold, Italic, Strikethrough  
+- **Lists**: Numbered lists, Bullet points  
+- **Media**: Emoji insertion, Image upload  
+- **Links**: Hyperlink insertion  
+- **Text Alignment**: Left, Center, Right  
+
+---
+
+### 3. Answering Questions
+
+- Users can post answers to any question.
+- Rich text formatting is available for answers.
+- Only logged-in users can post answers.
+
+---
+
+### 4. Voting & Accepting Answers
+
+- Users can upvote or downvote answers.
+- Question owners can mark an answer as **accepted**.
+
+---
+
+### 5. Tagging
+
+- Each question must include relevant tags to ensure discoverability.
+
+---
+
+### 6. Notification System
+
+- A notification bell appears in the top navigation bar.
+- Users are notified when:
+  - Someone answers their question
+  - Someone comments on their answer
+  - Someone mentions them using `@username`
+- The bell shows unread count and expands to a dropdown list on click.
+
+---
+
+## 🔧 Admin Role Responsibilities
+
+- Reject inappropriate or spammy skill descriptions.
+- Ban users who violate platform policies.
+- Monitor pending, accepted, or cancelled swaps.
+- Send platform-wide messages (e.g., feature updates, downtime alerts).
+- Download reports of user activity, feedback logs, and swap statistics.
+
+---
+
+## 📐 Mockup
+
+
+
+---
+
+## 👨‍💻 Team Members
+
+| Name | Email |
+|------|-------|
+| Dhrumil Amin (TL) | dhrumil.work964@gmail.com |
+| Bhavya Amin | bhavyaamin9925@gmail.com |
+| Akshat Patel | patelakshat1411@gmail.com |
+| Heet Parikh | heet16@gmail.com |
+
+---
+
+## 📄 License
+
+This project is for academic purposes only. All rights reserved by the creators.
+

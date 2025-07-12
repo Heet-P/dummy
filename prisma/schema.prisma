@@ -142,5 +142,5 @@ model PollVote {
   poll   Poll   @relation(fields: [pollId], references: [id], onDelete: Cascade, onUpdate: Cascade)
   pollId String
 
-  @@id([authorId, pollId]) // an user can only vote a single poll option
+  @@id([authorId, pollId]) // an user can only vote a single poll option one time.
 }

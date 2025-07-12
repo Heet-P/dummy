@@ -2,13 +2,13 @@
 
 import { cn, PropsWithClassName } from "@/lib/utils/ui-utils";
 import BeatLoader from "react-spinners/BeatLoader";
-import { blue } from "tailwindcss/colors";
+import { violet } from "tailwindcss/colors";
 import { Skeleton } from "./ui/skeleton";
 
 export const Loader = () => {
   return (
     <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-      <BeatLoader color={blue[600]} size={16} />
+      <BeatLoader color={violet[600]} size={16} />
     </div>
   );
 };
